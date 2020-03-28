@@ -1,0 +1,2 @@
+ 1. new
+ curl -H "Content-Type: application/json" -X POST -d '{"name":"do the laundry","done":"false"}' http://localhost:8080/api/todos/new

@@ -1,5 +1,6 @@
 package me.farhan.todo.model;
 
+import lombok.Getter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @MappedSuperclass
+@Getter
 abstract class AbstractEntity {
 
     @Id

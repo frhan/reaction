@@ -1,6 +1,7 @@
 package me.farhan.todo.model;
 
-import lombok.Getter;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -13,8 +14,9 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @MappedSuperclass
-@Getter
-abstract class AbstractEntity {
+@Data
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+public abstract class AbstractEntity {
 
     @Id
     @GeneratedValue(generator = "UUID")

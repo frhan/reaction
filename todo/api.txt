@@ -4,9 +4,5 @@
  2. get
 
   curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/todos/3ef941c7-4347-4ae8-b580-a0054fec0428
-
-   curl -H "Content-Type: application/json" -X POST -d '{"id":"3ef941c7-4347-4ae8-b580-a0054fec0428","name":"now do the laundry","done":"false"}' http://localhost:8080/api/todos/update
-
-
-
-   curl -H "Content-Type: application/json" -X DELETE http://localhost:8080/api/todos/90e9fe86-d192-4aad-a13b-b0cd85165263
+  curl -H "Content-Type: application/json" -X PUT -d '{"id":"3ef941c7-4347-4ae8-b580-a0054fec0428","name":"now do the laundry","done":"false"}' http://localhost:8080/api/todos/update
+  curl -H "Content-Type: application/json" -X DELETE http://localhost:8080/api/todos/90e9fe86-d192-4aad-a13b-b0cd85165263

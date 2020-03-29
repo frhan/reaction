@@ -42,7 +42,7 @@ public class TodoController {
         return todoService.getAll();
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     public ResponseEntity<?> update(@Valid @RequestBody TodoDto todoDto) {
         logger.debug("Update Todo Request " + todoDto.getId());
         return todoService.createOrUpdate(todoDto);

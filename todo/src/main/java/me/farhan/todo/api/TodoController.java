@@ -13,6 +13,7 @@ import javax.validation.Valid;
 import java.util.UUID;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/todos")
 public class TodoController {
     private static final Logger logger = LoggerFactory.getLogger(TodoController.class);
